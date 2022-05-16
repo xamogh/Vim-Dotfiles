@@ -7,9 +7,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     "git", "clone",
     "--depth",
     "1",
-    "https://github.com/wbthomason/packer.nvim",
-    install_path,
-  }
+    "https://github.com/wbthomason/packer.nvim", install_path, }
   print "Installing packer close and reopen Neovim..."
   vim.cmd [[packadd packer.nvim]]
 end
@@ -79,6 +77,7 @@ return packer.startup(function(use)
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   -- Treesitter
   use {
