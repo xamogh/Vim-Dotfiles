@@ -26,10 +26,10 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Resize with arrows
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<Up>", ":resize -2<CR>", opts)
+keymap("n", "<Down>", ":resize +2<CR>", opts)
+keymap("n", "<Left>", ":vertical resize -2<CR>", opts)
+keymap("n", "<Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
@@ -71,4 +71,11 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Null formatting
-keymap("n", "<leader>fp", ":Format<cr>", opts)
+-- keymap("n", "<leader>fp", ":Format<cr>", opts)
+
+-- Telescope
+keymap("n", "<leader>ff", ":Telescope find_files<cr>", opts)
+keymap("n", "<leader>fg", ":Telescope live_grep<cr>", opts)
+
+-- Buffer
+keymap("n", "<leader>bd", ":Bdelete<cr>", opts)
