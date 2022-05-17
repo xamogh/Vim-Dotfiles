@@ -79,3 +79,6 @@ keymap("n", "<leader>fg", ":Telescope live_grep<cr>", opts)
 
 -- Buffer
 keymap("n", "<leader>bd", ":Bdelete<cr>", opts)
+
+-- Buffer Maximizer
+keymap("n", "<leader>mm", ":MaximizerToggle<cr>", opts)
