@@ -14,7 +14,7 @@ brew install gcc
 Just clone the repo -> open nvim -> go to user/plugins.lua -> write once (:w), all the plugins will be automatically installed.
 
 ```bash
-git clone https://github.com/xamogh/Vim-Configuration.git ~/.config/nvim
+git clone https://github.com/xamogh/Vim-Dotfiles.git ~/.config/nvim
 
 ```
 
